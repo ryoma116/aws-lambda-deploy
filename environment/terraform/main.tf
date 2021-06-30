@@ -8,3 +8,7 @@ module "aws" {
   pgp_key = var.pgp_key
   lambda_role = var.lambda_role
 }
+
+output "secret_access" {
+  value = module.aws.secret_access
+}
